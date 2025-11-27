@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abdullah Al Sadik — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#94a3b8;
+      --accent:#60a5fa;
+      --glass:rgba(255,255,255,0.03);
+      --radius:12px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      background:linear-gradient(180deg,#071028 0%,var(--bg) 100%);
+      color:#e6eef8;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+      padding:32px;
+    }
+    .container{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:320px 1fr;gap:28px}
+    header{display:flex;gap:16px;align-items:center}
+    .photo{width:84px;height:84px;border-radius:14px;overflow:hidden;background:linear-gradient(135deg,var(--accent),#7c3aed)}
+    .photo img{width:100%;height:100%;object-fit:cover;display:block}
+    .name{font-size:20px;font-weight:700}
+    .role{font-size:13px;color:var(--muted);margin-top:4px}
+    .card{background:linear-gradient(180deg,var(--glass),transparent);border-radius:var(--radius);padding:18px}
+    nav .contact{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+    .contact div{font-size:13px;color:var(--muted)}
+    .sidebar .section{margin-top:16px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:8px;font-size:13px;color:var(--muted)}
+    main{display:flex;flex-direction:column;gap:18px}
+    h2{margin:0 0 10px 0;font-size:16px}
+    p.lead{color:var(--muted);margin:0}
+    .about .bio{margin-top:8px;color:var(--muted)}
+    .work-list{display:grid;gap:12px}
+    .work{display:flex;flex-direction:column;padding:14px;border-radius:10px;background:rgba(255,255,255,0.02)}
+    .work .title{font-weight:600}
+    .work .meta{color:var(--muted);font-size:13px;margin-top:6px}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .project{padding:12px;border-radius:10px;background:rgba(255,255,255,0.02)}
+    .cta{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#7c3aed);color:#041024;font-weight:600;text-decoration:none}
+    footer{text-align:center;color:var(--muted);font-size:13px;padding:18px}
+    @media (max-width:900px){
+      .container{grid-template-columns:1fr;}
+      .projects{grid-template-columns:1fr}
+      .photo{width:72px;height:72px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="card">
+        <header>
+          <div class="photo">
+            <img src="J:\My Drive\my all skillful achivment\MY Portfollio\poty.jpg">
+          <div>
+            <div class="name">Abdullah Al Sadik</div>
+            <div class="role">Home Tutor · Computer Science Student</div>
+          </div>
+        </header>
+        <nav class="contact">
+          <div class="card">
+            <div class="section">
+              <div style="font-weight:600">Contact</div>
+              <div class="contact-item">Email: sadikbzs20@gmail.com</div>
+              <div class="contact-item">Phone: +880 184421550</div>
+              <div class="contact-item">Location: Dhaka, Bangladesh</div>
+            </div>
+          </div>
+          <div class="card section">
+            <div style="font-weight:600">Skills</div>
+            <div class="skills" style="margin-top:10px">
+              <span class="skill">C Programming</span>
+              <span class="skill">HTML & CSS</span>
+              <span class="skill">Java</span>
+              <span class="skill">Teaching</span>
+              <span class="skill">Problem Solving</span>
+            </div>
+          </div>
+          <div class="card section">
+            <div style="font-weight:600">Education</div>
+            <div style="margin-top:8px;color:var(--muted);font-size:14px">B.Sc. in CSE (ongoing) — United International University</div>
+          </div>
+        </nav>
+      </div>
+      <div style="height:18px"></div>
+      <div class="card">
+        <div style="font-weight:600">Quick Links</div>
+        <div style="margin-top:10px;display:flex;flex-direction:column;gap:8px">
+          <a class="cta" href="https://www.linkedin.com/in/md-abdullah-al-sadik-59306b347">Hire me</a>
+          <a class="cta" href="https://github.com/Sadik281" style="background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--accent);">See projects</a>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <section class="card about">
+        <h2>About</h2>
+        <p class="lead">I am a home tutor and CSE student focused on building practical programming skills and helping students understand concepts clearly. I create lesson plans, provide step-by-step problem solving, and prepare students for exams.</p>
+        <p class="bio">I offer flexible tutoring (online and in-person), clear explanations in Math and Science related subjects, and tailored practice problems. My teaching approach emphasizes fundamentals, worked examples, and exam techniques.</p>
+      </section>
+      <section class="card">
+        <h2>Experience</h2>
+        <div class="work-list">
+          <article class="work">
+            <div class="title">Home Tutor</div>
+            <div class="meta">Private tutoring · 2022 — Present</div>
+            <div style="margin-top:8px;color:var(--muted)">One-to-one and small-group classes for school and college students. Topics: C programming, basic math, and exam preparation.</div>
+          </article>
+          <article class="work">
+            <div class="title">Tutor — Edteach </div>
+            <div class="meta">2020 — 2022</div>
+            <div style="margin-top:8px;color:var(--muted)">Designed lesson plans, evaluated student performance, and adjusted teaching methods to student needs.</div>
+          </article>
+        </div>
+      </section>
+      <section class="card" id="projects">
+        <h2>Projects & Sample Work</h2>
+        <div class="projects">
+          <div class="project">
+            <div style="font-weight:600">DESCO Billing System (C)
+              <a class="See Project" href="https://github.com/Sadik281/My-Frist-Project" >See This </a>
+            </div>
+            <div style="margin-top:6px;color:var(--muted)">A console application for customer registration, usage input, and bill generation.</div>
+          </div>
+          <div class="project">
+            <div style="font-weight:600">Exam Preparation Notes</div>
+            <div style="margin-top:6px;color:var(--muted)">Step-by-step solved problems for nested loops and core C topics.</div>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <h2>Testimonials</h2>
+        <div style="color:var(--muted)">"Clear explanations and great exam support." — Student A</div>
+        <div style="color:var(--muted);margin-top:8px">"Helped improve my programming skills quickly." — Student B</div>
+      </section>
+      <section class="card" id="contact">
+        <h2>Contact</h2>
+        <p style="color:var(--muted)">I’m available for new students and part-time teaching roles. Email or call to discuss schedule and rates.</p>
+        <div style="margin-top:12px">
+          <a class="cta" href="mailto:sadikbzs20@gmail.com">Email me</a>
+        </div>
+      </section>
+      <footer>
+        © 2025 Abdullah Al Sadik · Built with HTML & CSS
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
